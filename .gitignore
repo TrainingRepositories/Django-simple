@@ -1,0 +1,14 @@
+*.env*
+# No neeeds ...
+## Pythons
+*.ipynb
+*-checkpoint.ipynb
+__pycache__/
+*.pyc
+
+
+deploy.sh
+sign-in.sh
+
+Project/db.sqlite3
+
