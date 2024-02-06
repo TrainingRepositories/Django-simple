@@ -7,3 +7,10 @@ def index(request):
     return render(request=request,
                   template_name=template_path,
                   context=context)
+    
+    
+def form(request): 
+    template_path= 'apps/app1/form.html'
+    return render(request=request,
+                  template_name=template_path)
+ 
