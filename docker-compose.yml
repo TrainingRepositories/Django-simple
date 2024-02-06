@@ -1,0 +1,20 @@
+version: "3.9"
+  
+services:  
+  django_project:
+    build:
+        context: Project/
+        dockerfile: Dockerfile
+    # env_file: Project/.env.stage
+    ports: 
+        - '8099:8099'         
+    networks:
+        - myAppNetwork 
+
+networks:
+    myAppNetwork:
+        driver: bridge
+ 
+volumes:
+    my_db_vol:
+        driver: local
