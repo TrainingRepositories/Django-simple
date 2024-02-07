@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books list</title>
+</head>
+<body>
+    
+
+    <div class="container">
+        <h1>My Records</h1>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Abstract</th>
+                    <th>ISBN</th>
+                    <th>Author_ID</th>
+                    <th>Shelf_ID</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for item in data %}
+                    <tr>
+                        <td>{{ item.Title }}</td>
+                        <td>{{ item.Abstract }}</td>
+                        <td>{{ item.ISBN }}</td>
+                        <td>{{ item.Author_ID }}</td>
+                        <td>{{ item.Shelf_ID }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>

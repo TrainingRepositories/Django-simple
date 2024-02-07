@@ -5,3 +5,5 @@ def index(request):
     template_path= 'main/index.html'
     return render(request=request,
                   template_name=template_path)
+    
+    

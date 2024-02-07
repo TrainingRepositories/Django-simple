@@ -23,4 +23,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index , name='mainPage'),
     path('app1/', include('app1.urls')),
+    path('BookStoreApp/', include('BookStoreApp.urls')),
 ]
