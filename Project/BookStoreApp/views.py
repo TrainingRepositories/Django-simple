@@ -49,7 +49,7 @@ if True : # Shelves
                         context={'form':form1})   
         
     def list_Shelves(request): 
-        template_path= 'apps/BookStoreApp/Shelves/list.html'
+        template_path= 'apps/BookStoreApp/Shelves/list2.html'
         data = Shelves.objects.all()
         return render(request, template_path, {'data': data}) 
 
