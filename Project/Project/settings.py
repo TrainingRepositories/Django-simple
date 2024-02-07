@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure---n8@r#^uli0794(ngezaf=n$lw)azu9%hiefr2n_q)ptftf4_
 DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
-
+CSRF_TRUSTED_ORIGINS = ['https://test.dj.abdulwahabdev.com']
 
 # Application definition
 
@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'app1',
 ]
 
 MIDDLEWARE = [

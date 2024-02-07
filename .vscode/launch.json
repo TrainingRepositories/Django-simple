@@ -1,0 +1,26 @@
+
+{
+    "version": "0.2.0",
+    "compounds": [
+        {
+            "name": "Compound", 
+            "configurations": [ 
+                                "Django_simple", 
+                            ] 
+        }
+    ], 
+    "configurations": [      
+        // Django_simple 
+
+        { 
+            "name": "Django_simple",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/Project/manage.py", 
+           "python": "${workspaceFolder}/.env/bin/python",  
+            "args": ["runserver","0.0.0.0:8000"],
+            "justMyCode": true
+        }, 
+ 
+    ]
+}
